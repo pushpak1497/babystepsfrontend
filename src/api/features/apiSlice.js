@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const apiSlice = createApi({
   reducerPath: "api",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:5000/api" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://babystepsbackend-445s.onrender.com/api" }),
   tagTypes: ["Doctor", "Appointment"],
   endpoints: (builder) => ({
     getDoctors: builder.query({
