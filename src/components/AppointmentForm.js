@@ -54,7 +54,7 @@ const AppointmentForm = ({
     } else {
       const dateTime = new Date(`${selectedDate}T${selectedSlot}:00`);
       const newAppointment = {
-        doctorId: doctor._id,
+        id: doctor._id,
         date: dateTime,
         duration: 30,
         appointmentType,
